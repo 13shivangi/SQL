@@ -60,6 +60,16 @@ select top 1* from Dept order by id desc
  --to delete duplicate values
 delete Employee where [Name] = 'Anushree' OR [Name] = 'Deepanshu'
 
+--trigger
+INSERT INTO [dbo].[Employee]
+           ([Name]
+           ,[Designation]
+           ,[Salary])
+     VALUES
+           ('Priya','Tester',42000)
+
+select * from EmpDept
+select * from Employee
 
 
 
